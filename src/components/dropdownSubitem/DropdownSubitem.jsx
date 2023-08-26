@@ -1,3 +1,5 @@
+import './DropdownSubitem.css';
+
 const DropdownSubitem = ({ name, method, url, params}) => {
     return (
         <div className="DropdownSubitem">
