@@ -168,3 +168,178 @@ export const serviceConstants = [
     ],
   }
 ]
+
+export const columnsExample = [
+    {
+        id: 1,
+        name: "Column1"
+    },
+    {
+        id: 2,
+        name: "Column2"
+    },
+    {
+        id: 3,
+        name: "Column3"
+    },
+    {
+        id: 4,
+        name: "Column4"
+    },
+    {
+        id: 5,
+        name: "Column5"
+    },
+    {
+        id: 6,
+        name: "Column6"
+    },
+]
+
+export const rowsExample = [
+    {
+        id: 1,
+        data: [
+            {
+                id: 1,
+                data: "data1"
+            },
+            {
+                id: 2,
+                data: "data2"
+            },
+            {
+                id: 3,
+                data: "data3"
+            },
+            {
+                id: 4,
+                data: "data4"
+            },
+            {
+                id: 5,
+                data: "data5"
+            },
+            {
+                id: 6,
+                data: "data6"
+            }
+        ]
+    },
+    {
+        id: 2,
+        data: [
+            {
+                id: 1,
+                data: "data1"
+            },
+            {
+                id: 2,
+                data: "data2"
+            },
+            {
+                id: 3,
+                data: "data3"
+            },
+            {
+                id: 4,
+                data: "data4"
+            },
+            {
+                id: 5,
+                data: "data5"
+            },
+            {
+                id: 6,
+                data: "data6"
+            }
+        ]
+    },
+    {
+        id: 3,
+        data: [
+            {
+                id: 1,
+                data: "data1"
+            },
+            {
+                id: 2,
+                data: "data2"
+            },
+            {
+                id: 3,
+                data: "data3"
+            },
+            {
+                id: 4,
+                data: "data4"
+            },
+            {
+                id: 5,
+                data: "data5"
+            },
+            {
+                id: 6,
+                data: "data6"
+            }
+        ]
+    },
+    {
+        id: 4,
+        data: [
+            {
+                id: 1,
+                data: "data1"
+            },
+            {
+                id: 2,
+                data: "data2"
+            },
+            {
+                id: 3,
+                data: "data3"
+            },
+            {
+                id: 4,
+                data: "data4"
+            },
+            {
+                id: 5,
+                data: "data5"
+            },
+            {
+                id: 6,
+                data: "data6"
+            }
+        ]
+    },
+    {
+        id: 5,
+        data: [
+            {
+                id: 1,
+                data: "data1"
+            },
+            {
+                id: 2,
+                data: "data2"
+            },
+            {
+                id: 3,
+                data: "data3"
+            },
+            {
+                id: 4,
+                data: "data4"
+            },
+            {
+                id: 5,
+                data: "data5"
+            },
+            {
+                id: 6,
+                data: "data6"
+            }
+        ]
+    },
+]

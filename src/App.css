@@ -3,3 +3,9 @@
   justify-content: start;
   text-align: center;
 }
+
+.TableDiv {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
