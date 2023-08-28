@@ -2,7 +2,7 @@ import DropdownSubitem from "../dropdownSubitem/DropdownSubitem";
 import './DropdownItem.css';
 
 const DropdownItem = (props) => {
-    console.log(props);
+    //console.log(props);
     return (
         <div className="DropdownItem">
             <div className="DropdownChoice">

@@ -342,4 +342,39 @@ export const rowsExample = [
             }
         ]
     },
+];
+
+export const inputsExample = [
+    {
+        id: 1,
+        data: {
+            name: "input1",
+            type: "text",
+            placeholder: "placeholder1"
+        }
+    },
+    {
+        id: 2,
+        data: {
+            name: "input2",
+            type: "text",
+            placeholder: "placeholder2"
+        }
+    },
+    {
+        id: 3,
+        data: {
+            name: "input3",
+            type: "text",
+            placeholder: "placeholder3"
+        }
+    },
+    {
+        id: 4,
+        data: {
+            name: "input4",
+            type: "text",
+            placeholder: "placeholder4"
+        }
+    },
 ]
