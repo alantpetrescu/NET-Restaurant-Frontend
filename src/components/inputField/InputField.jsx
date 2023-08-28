@@ -1,7 +1,7 @@
 import "./InputField.css";
 
 export const InputField = ({ inputField }) => {
-    console.log("Input Field: " + inputField);
+   // console.log("Input Field: " + inputField);
     return (
         <div className="InputField">
             <span>{inputField.name}</span>

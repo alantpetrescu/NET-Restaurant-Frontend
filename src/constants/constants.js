@@ -1,169 +1,221 @@
 export const serviceConstants = [
 {
+    id: 1,
     name: "Authorization",
     actions: [
     {
+        id: 1,
         name: "Create User",
         method: "POST",
         url: "api/AuthController/createUser",
-        params: [["Password", "string"], ["Email", "string"], ["FirstName", "?string"], ["LastName", "?string"]]
+        bodyProperties: [["Password", "string"], ["Email", "string"], ["FirstName", "?string"], ["LastName", "?string"]],
+        params: []
     },
     {
+        id: 2,
         name: "Login",
-        url: "POST",
+        method: "POST",
         url: "api/AuthController/loginUser",
-        params: [["Password", "string"], ["Email", "string"], ["FirstName", "string?"], ["LastName", "string?"]]
+        bodyProperties: [["Password", "string"], ["Email", "string"], ["FirstName", "string?"], ["LastName", "string?"]],
+        params: []
     }
     ],
 },
 {
+    id: 2,
     name: "Restaurant",
     actions: [
     {
+        id: 1,
         name: "Get Restaurants",
         method: "GET",
         url: "api/RestaurantController/getRestaurants",
+        bodyProperties: [],
         params: []
     },
     {
+        id: 2,
         name: "Get Restaurant",
-        url: "GET",
+        method: "GET",
         url: "api/RestaurantController/getRestaurant",
-        params: [["restaurantId", "Guid"]]
+        bodyProperties: [["restaurantId", "Guid"]],
+        params: []
     },
     {
+        id: 3,
         name: "Create",
         method: "POST",
         url: "api/RestaurantController/create",
+        bodyProperties: [],
         params: [["Title", "string"]],
     },
     {
+        id: 4,
         name: "Delete",
-        url: "POST",
+        method: "POST",
         url: "api/RestaurantController/delete",
+        bodyProperties: [],
         params: [["RestaurantId", "Guid"]],
     }
     ],
 }, 
 {
+    id: 3,
     name: "Employee",
     actions: [
     {
+        id: 1,
         name: "Get Employees",
         method: "GET",
         url: "api/EmployeeController/getEmployees",
+        bodyProperties: [],
         params: [],
     },
     {
+        id: 2,
         name: "Get Employee By Id",
-        url: "GET",
+        method: "GET",
         url: "api/EmployeeController/getEmployee/id",
-        params: [["employeeId", "Guid"]],
+        bodyProperties: [["employeeId", "Guid"]],
+        params: [],
     },
     {
+        id: 3,
         name: "Get Employee By Email",
-        url: "GET",
+        method: "GET",
         url: "api/EmployeeController/getEmployee/email",
-        params: [["employeeEmail", "string"]],
+        bodyProperties: [["employeeEmail", "string"]],
+        params: [],
     },
     {
+        id: 4,
         name: "Create",
         method: "POST",
         url: "api/EmployeeController/create",
+        bodyProperties: [],
         params: [["FirstName", "string"], ["LastName", "string"], ["Email", "string"], ["Age", "int"], ["Revenue", "int"], ["RestaurantId", "Guid"]],
     },
     {
         name: "Delete",
-        url: "POST",
+        method: "POST",
         url: "api/EmployeeController/delete",
-        params: [["employeeId", "Guid"]]
+        bodyProperties: [["employeeId", "Guid"]],
+        params: []
     }
     ],
 }, 
 {
+    id: 4,
     name: "Manager",
     actions: [
     {
+        id: 1,
         name: "Get Managers",
         method: "GET",
         url: "api/ManagerController/getManagers",
+        bodyProperties: [],
         params: [],
     },
     {
+
+        id: 2,
         name: "Get Manager",
-        url: "GET",
+        method: "GET",
         url: "api/ManagerController/getManager",
-        params: [["managerId", "Guid"]],
+        bodyProperties: [["managerId", "Guid"]],
+        params: [],
     },
     {
+        id: 3,
         name: "Create",
         method: "POST",
         url: "api/ManagerController/create",
+        bodyProperties: [],
         params: [["FirstName", "string"], ["LastName", "string"], ["Email", "string"], ["Age", "int"], ["Revenue", "int"], ["RestaurantId", "Guid"]],
     },
     {
+        id: 4,
         name: "Delete",
-        url: "POST",
+        method: "POST",
         url: "api/ManagerController/delete",
-        params: [["managerId", "Guid"]]
+        bodyProperties: [["managerId", "Guid"]],
+        params: [],
     }
     ],
 },
 {
+    id: 5,
     name: "Recipe",
     actions: [
     {
+        id: 1,
         name: "Get Recipes",
         method: "GET",
         url: "api/RecipeController/getRecipes",
+        bodyProperties: [],
         params: [],
     },
     {
+        id: 2,
         name: "Get Recipe",
-        url: "GET",
+        method: "GET",
         url: "api/RecipeController/getRecipe",
-        params: [["recipeId", "Guid"]],
+        bodyProperties: [["recipeId", "Guid"]],
+        params: [],
     },
     {
+        id: 3,
         name: "Create",
         method: "POST",
         url: "api/RecipeController/create",
+        bodyProperties: [],
         params: [["Name", "string"]],
     },
     {
+        id: 4,
         name: "Delete",
-        url: "POST",
+        method: "POST",
         url: "api/RecipeController/delete",
-        params: [["recipeId", "Guid"]]
+        bodyProperties: [["recipeId", "Guid"]],
+        params: [],
     }
     ],
 },
 {
+    id: 6,
     name: "User",
     actions: [
     {
+        id: 1,
         name: "Get Users",
         method: "GET",
         url: "api/UserController/getUsers",
+        bodyProperties: [],
         params: [],
     },
     {
+        id: 2,
         name: "Get User",
-        url: "GET",
+        method: "GET",
         url: "api/UserController/getUser",
-        params: [["userId", "Guid"]],
+        bodyProperties: [["userId", "Guid"]],
+        params: [],
     },
     {
+        id: 3,
         name: "Create",
-        url: "POST",
+        method: "POST",
         url: "api/UserController/create",
+        bodyProperties: [],
         params: [["Password", "string"], ["Email", "string"], ["FirstName", "string?"], ["LastName", "string?"]],
     },
     {
+        id: 4,
         name: "Delete",
-        url: "POST",
+        method: "POST",
         url: "api/UserController/delete",
-        params: [["userId", "Guid"]]
+        bodyProperties: [["userId", "Guid"]],
+        params: [],
     }
     ],
   }

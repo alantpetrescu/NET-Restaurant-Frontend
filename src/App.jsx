@@ -12,10 +12,12 @@ const App = () => {
   const [rows, setRows] = useState(rowsExample);
   const [inputs, setInputs] = useState(inputsExample);
 
-  console.log("App inputs: " + JSON.stringify(inputs));
+  console.log("Inputs:");
+  console.log(inputs);
+
   return (
     <div className="App">
-      <Sidebar username={username} services={services} />
+      <Sidebar username={username} services={services} setInputs={setInputs}/>
       <InputList inputs={inputs} />
       <div className="TableDiv">
         <Table columns={columns} rows={rows} />
