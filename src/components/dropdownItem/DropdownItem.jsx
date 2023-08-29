@@ -1,7 +1,7 @@
 import DropdownSubitem from "../dropdownSubitem/DropdownSubitem";
 import './DropdownItem.css';
 
-const DropdownItem = ({name, actions, setInputs}) => {
+const DropdownItem = ({name, actions, setBodyInputs, setParamInputs, setBodyInputsData, setParamInputsData, setMethod, setUrl}) => {
     //console.log(props);
     return (
         <div className="DropdownItem">
@@ -17,7 +17,12 @@ const DropdownItem = ({name, actions, setInputs}) => {
                     url={action.url} 
                     bodyProperties={action.bodyProperties} 
                     params={action.params} 
-                    setInputs={setInputs}
+                    setBodyInputs={setBodyInputs}
+                    setParamInputs={setParamInputs}
+                    setBodyInputsData={setBodyInputsData}
+                    setParamInputsData={setParamInputsData}
+                    setMethod={setMethod}
+                    setUrl={setUrl}
                     />
                 })}
             </div>
