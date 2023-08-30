@@ -9,6 +9,8 @@ import { RequestButton } from './components/requestButton/RequestButton';
 const App = () => {
   const baseUrl = 'https://localhost:7192/';
   const [username, setUsername] = useState("Guest");
+  const [email, setEmail] = useState("");
+  const [bearerToken, setBearerToken] = useState("");
   const [services, setServices] = useState(serviceConstants);
   const [columns, setColumns] = useState(columnsExample);
   const [rows, setRows] = useState(rowsExample);
@@ -19,16 +21,17 @@ const App = () => {
   const [method, setMethod] = useState("GET");
   const [url, setUrl] = useState("");
 
-  console.log("body inputs data");
-  console.log(bodyInputsData)
-
-  console.log("param inputs data")
-  console.log(paramInputsData)
+  // console.log("username: " + username);
+  // console.log("email: " + email);
+  // console.log("bearerToken: " + bearerToken);
+  console.log("rows");
+  console.log(rows);
 
   return (
     <div className="App">
       <Sidebar 
         username={username}
+        email={email}
         services={services} 
         setBodyInputs={setBodyInputs}
         setParamInputs={setParamInputs}
@@ -40,7 +43,19 @@ const App = () => {
       <div>
         <InputList inputs={bodyInputs} inputsData={bodyInputsData} setInputsData={setBodyInputsData} />
         <InputList inputs={paramInputs} inputsData={paramInputsData} setInputsData={setParamInputsData} />
-        <RequestButton url={url} baseUrl={baseUrl} method={method} params={paramInputsData} body={bodyInputsData} />
+        <RequestButton 
+          url={url} 
+          baseUrl={baseUrl}
+          method={method} 
+          params={paramInputsData} 
+          body={bodyInputsData} 
+          setUsername={setUsername}
+          setEmail={setEmail}
+          bearerToken={bearerToken}
+          setBearerToken={setBearerToken}
+          setColumns={setColumns}
+          setRows={setRows} 
+        />
       </div>
       <div className="TableDiv">
         <Table columns={columns} rows={rows} />

@@ -1,8 +1,11 @@
 import "./SidebarHeader.css";
 
-const SidebarHeader = ({username}) => {
+const SidebarHeader = ({username, email}) => {
     return (
-        <h3 className="Username">{username}</h3>
+        <div className="SidebarHeader">
+            <h3 className="Username">{username}</h3>
+            <span className="Email">{email}</span>
+        </div>
     );
 };
 

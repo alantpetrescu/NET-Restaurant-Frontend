@@ -38,16 +38,16 @@ export const serviceConstants = [
         name: "Get Restaurant",
         method: "GET",
         url: "api/Restaurant/getRestaurant",
-        bodyProperties: [["restaurantId", "Guid"]],
-        params: []
+        params: [["restaurantId", "Guid"]],
+        bodyProperties: []
     },
     {
         id: 3,
         name: "Create",
         method: "POST",
         url: "api/Restaurant/create",
-        bodyProperties: [],
-        params: [["title", "string"]],
+        params: [],
+        bodyProperties: [["title", "string"]],
     },
     {
         id: 4,
@@ -76,24 +76,24 @@ export const serviceConstants = [
         name: "Get Employee By Id",
         method: "GET",
         url: "api/Employee/getEmployee/id",
-        bodyProperties: [["employeeId", "Guid"]],
-        params: [],
+        params: [["employeeId", "Guid"]],
+        bodyProperties: [],
     },
     {
         id: 3,
         name: "Get Employee By Email",
         method: "GET",
         url: "api/Employee/getEmployee/email",
-        bodyProperties: [["employeeEmail", "string"]],
-        params: [],
+        params: [["employeeEmail", "string"]],
+        bodyProperties: [],
     },
     {
         id: 4,
         name: "Create",
         method: "POST",
         url: "api/Employee/create",
-        bodyProperties: [],
-        params: [
+        params: [],
+        bodyProperties: [
             ["firstName", "string"],
             ["lastName", "string"], 
             ["email", "string"], 
@@ -106,8 +106,8 @@ export const serviceConstants = [
         name: "Delete",
         method: "POST",
         url: "api/Employee/delete",
-        bodyProperties: [["employeeId", "Guid"]],
-        params: []
+        params: [["employeeId", "Guid"]],
+        bodyProperties: []
     }
     ],
 }, 
@@ -129,16 +129,16 @@ export const serviceConstants = [
         name: "Get Manager",
         method: "GET",
         url: "api/Manager/getManager",
-        bodyProperties: [["managerId", "Guid"]],
-        params: [],
+        params: [["managerId", "Guid"]],
+        bodyProperties: [],
     },
     {
         id: 3,
         name: "Create",
         method: "POST",
         url: "api/Manager/create",
-        bodyProperties: [],
-        params: [
+        params: [],
+        bodyProperties: [
             ["firstName", "string"],
             ["lastName", "string"],
             ["email", "string"],
@@ -151,8 +151,8 @@ export const serviceConstants = [
         name: "Delete",
         method: "POST",
         url: "api/Manager/delete",
-        bodyProperties: [["managerId", "Guid"]],
-        params: [],
+        params: [["managerId", "Guid"]],
+        bodyProperties: [],
     }
     ],
 },
@@ -173,24 +173,24 @@ export const serviceConstants = [
         name: "Get Recipe",
         method: "GET",
         url: "api/Recipe/getRecipe",
-        bodyProperties: [["recipeId", "Guid"]],
-        params: [],
+        params: [["recipeId", "Guid"]],
+        bodyProperties: [],
     },
     {
         id: 3,
         name: "Create",
         method: "POST",
         url: "api/Recipe/create",
-        bodyProperties: [],
-        params: [["name", "string"]],
+        params: [],
+        bodyProperties: [["name", "string"]],
     },
     {
         id: 4,
         name: "Delete",
         method: "POST",
         url: "api/Recipe/delete",
-        bodyProperties: [["recipeId", "Guid"]],
-        params: [],
+        params: [["recipeId", "Guid"]],
+        bodyProperties: [],
     }
     ],
 },
@@ -211,28 +211,29 @@ export const serviceConstants = [
         name: "Get User",
         method: "GET",
         url: "api/User/getUser",
-        bodyProperties: [["userId", "Guid"]],
-        params: [],
+        params: [["userId", "Guid"]],
+        bodyProperties: [],
     },
     {
         id: 3,
         name: "Create",
         method: "POST",
         url: "api/User/create",
-        bodyProperties: [],
-        params: [
+        params: [],
+        bodyProperties: [
             ["password", "string"], 
             ["email", "string"],
             ["firstName", "string?"], 
-            ["lastName", "string?"]],
+            ["lastName", "string?"]
+        ],
     },
     {
         id: 4,
         name: "Delete",
         method: "POST",
         url: "api/User/delete",
-        bodyProperties: [["userId", "Guid"]],
-        params: [],
+        params: [["userId", "Guid"]],
+        bodyProperties: [],
     }
     ],
   }
