@@ -51,6 +51,14 @@ export const serviceConstants = [
     },
     {
         id: 4,
+        name: "Update",
+        method: "POST",
+        url: "api/Restaurant/update",
+        params: [["restaurantId", "Guid"]],
+        bodyProperties: [["title", "string"]], 
+    },
+    {
+        id: 5,
         name: "Delete",
         method: "POST",
         url: "api/Restaurant/delete",
@@ -103,6 +111,22 @@ export const serviceConstants = [
         ],
     },
     {
+        id: 5,
+        name: "Update",
+        method: "POST",
+        url: "api/Employee/update",
+        params: [["employeeId", "Guid"]],
+        bodyProperties: [
+            ["firstName", "string"],
+            ["lastName", "string"], 
+            ["email", "string"], 
+            ["age", "int"], 
+            ["revenue", "int"], 
+            ["restaurantId", "Guid"]
+        ],
+    },
+    {
+        id: 6,
         name: "Delete",
         method: "POST",
         url: "api/Employee/delete",
@@ -148,6 +172,20 @@ export const serviceConstants = [
     },
     {
         id: 4,
+        name: "Update",
+        method: "POST",
+        url: "api/Manager/update",
+        params: [["manageId", "Guid"]],
+        bodyProperties: [
+            ["firstName", "string"],
+            ["lastName", "string"],
+            ["email", "string"],
+            ["age", "int"],
+            ["revenue", "int"],
+            ["restaurantId", "Guid"]],
+    },
+    {
+        id: 5,
         name: "Delete",
         method: "POST",
         url: "api/Manager/delete",
@@ -186,6 +224,14 @@ export const serviceConstants = [
     },
     {
         id: 4,
+        name: "Update",
+        method: "POST",
+        url: "api/Recipe/update",
+        params: [["recipeId", "Guid"]],
+        bodyProperties: [["name", "string"]],
+    },
+    {
+        id: 5,
         name: "Delete",
         method: "POST",
         url: "api/Recipe/delete",
@@ -229,6 +275,19 @@ export const serviceConstants = [
     },
     {
         id: 4,
+        name: "Update",
+        method: "POST",
+        url: "api/User/update",
+        params: [["userId", "Guid"]],
+        bodyProperties: [
+            ["password", "string"], 
+            ["email", "string"],
+            ["firstName", "string?"], 
+            ["lastName", "string?"]
+        ],
+    },
+    {
+        id: 5,
         name: "Delete",
         method: "POST",
         url: "api/User/delete",
