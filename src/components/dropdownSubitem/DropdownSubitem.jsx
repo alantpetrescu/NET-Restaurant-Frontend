@@ -1,8 +1,20 @@
 import './DropdownSubitem.css';
 
-const DropdownSubitem = ({ name, method, url, bodyProperties, params, setBodyInputs, setParamInputs, setBodyInputsData, setParamInputsData, setMethod, setUrl}) => {
+const DropdownSubitem = ({ name, 
+                           method, 
+                           url, 
+                           bodyProperties, 
+                           params,
+                           setMethodName, 
+                           setBodyInputs, 
+                           setParamInputs, 
+                           setBodyInputsData, 
+                           setParamInputsData, 
+                           setMethod, 
+                           setUrl}) => {
     const onClick = (e) => {
         //console.log(bodyProperties)
+        setMethodName(name);
         const inputBodyFields = bodyProperties.map((input, id) => ({
             id,
             data: {

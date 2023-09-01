@@ -13,6 +13,14 @@ export const serviceConstants = [
     },
     {
         id: 2,
+        name: "Create Admin",
+        method: "POST",
+        url: "api/Auth/createAdmin",
+        bodyProperties: [["password", "string"], ["email", "string"], ["firstName", "string?"], ["lastName", "string?"]],
+        params: []
+    },
+    {
+        id: 3,
         name: "Login",
         method: "POST",
         url: "api/Auth/loginUser",
@@ -262,19 +270,6 @@ export const serviceConstants = [
     },
     {
         id: 3,
-        name: "Create",
-        method: "POST",
-        url: "api/User/create",
-        params: [],
-        bodyProperties: [
-            ["password", "string"], 
-            ["email", "string"],
-            ["firstName", "string?"], 
-            ["lastName", "string?"]
-        ],
-    },
-    {
-        id: 4,
         name: "Update",
         method: "POST",
         url: "api/User/update",
@@ -287,7 +282,7 @@ export const serviceConstants = [
         ],
     },
     {
-        id: 5,
+        id: 4,
         name: "Delete",
         method: "POST",
         url: "api/User/delete",

@@ -64,7 +64,7 @@ export const RequestButton = ({
             headers,
             body: JSON.stringify(newBody)
         })
-        .then(res => {console.log(res); return res.json();})
+        .then(res => res.json())
         .then(data => {
             if(url.includes('loginUser')) {
                 setUsername(data.firstName + ' ' + data.lastName);

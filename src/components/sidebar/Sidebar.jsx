@@ -5,6 +5,7 @@ const Sidebar = (
                 {username,
                  email,
                  services,
+                 setMethodName,
                  setBodyInputs,
                  setParamInputs,
                  setBodyInputsData,
@@ -15,7 +16,8 @@ const Sidebar = (
         <div className="Sidebar">
             <SidebarHeader username={username} email={email}/>
             <Dropdown 
-                services={services} 
+                services={services}
+                setMethodName={setMethodName}
                 setBodyInputs={setBodyInputs} 
                 setParamInputs={setParamInputs}
                 setBodyInputsData={setBodyInputsData}
