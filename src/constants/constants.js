@@ -290,6 +290,78 @@ export const serviceConstants = [
         bodyProperties: [],
     }
     ],
+  },
+  {
+    id: 7,
+    name: "Ingredient",
+    actions: [
+    {
+        id: 1,
+        name: "Get Ingredients",
+        method: "GET",
+        url: "api/Ingredient/getIngredients",
+        bodyProperties: [],
+        params: [],
+    },
+    {
+        id: 2,
+        name: "Get Ingredient",
+        method: "GET",
+        url: "api/Ingredient/getIngredient",
+        params: [["ingredientId", "Guid"]],
+        bodyProperties: [],
+    },
+    {
+        id: 3,
+        name: "Create",
+        method: "POST",
+        url: "api/Ingredient/create",
+        params: [],
+        bodyProperties: [["name", "string"]],
+    },
+    {
+        id: 4,
+        name: "Update",
+        method: "POST",
+        url: "api/Ingredient/update",
+        params: [["ingredientId", "Guid"]],
+        bodyProperties: [["name", "string"]],
+    },
+    {
+        id: 5,
+        name: "Delete",
+        method: "POST",
+        url: "api/Ingredient/delete",
+        params: [["ingredientId", "Guid"]],
+        bodyProperties: [],
+    }
+    ],
+  },
+  {
+    id: 8,
+    name: "RecipeIngredient",
+    actions: [
+    {
+        id: 1,
+        name: "Get Recipe Ingredients",
+        method: "GET",
+        url: "api/RecipeIngredient/getRecipeIngredients",
+        bodyProperties: [],
+        params: [],
+    },
+    {
+        id: 2,
+        name: "Create",
+        method: "POST",
+        url: "api/RecipeIngredient/create",
+        params: [],
+        bodyProperties: [
+            ["quantity", "int"],
+            ["recipeId", "Guid"],
+            ["ingredientId", "Guid"]
+        ],
+    }
+    ],
   }
 ]
 
