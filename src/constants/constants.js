@@ -224,6 +224,14 @@ export const serviceConstants = [
     },
     {
         id: 3,
+        name: "Get Ingredients From Recipe",
+        method: "GET",
+        url: "api/Recipe/getIngredientsFromRecipe",
+        params: [["recipeName", "string"]],
+        bodyProperties: [],
+    },
+    {
+        id: 4,
         name: "Create",
         method: "POST",
         url: "api/Recipe/create",
@@ -231,7 +239,7 @@ export const serviceConstants = [
         bodyProperties: [["name", "string"]],
     },
     {
-        id: 4,
+        id: 5,
         name: "Update",
         method: "POST",
         url: "api/Recipe/update",
@@ -239,7 +247,7 @@ export const serviceConstants = [
         bodyProperties: [["name", "string"]],
     },
     {
-        id: 5,
+        id: 6,
         name: "Delete",
         method: "POST",
         url: "api/Recipe/delete",
@@ -313,6 +321,14 @@ export const serviceConstants = [
     },
     {
         id: 3,
+        name: "Get Recipes Containing Ingredient",
+        method: "GET",
+        url: "api/Ingredient/GetRecipesContainingIngredient",
+        params: [["ingredientName", "string"]],
+        bodyProperties: [],
+    },
+    {
+        id: 4,
         name: "Create",
         method: "POST",
         url: "api/Ingredient/create",
@@ -320,7 +336,7 @@ export const serviceConstants = [
         bodyProperties: [["name", "string"]],
     },
     {
-        id: 4,
+        id: 5,
         name: "Update",
         method: "POST",
         url: "api/Ingredient/update",
@@ -328,7 +344,7 @@ export const serviceConstants = [
         bodyProperties: [["name", "string"]],
     },
     {
-        id: 5,
+        id: 6,
         name: "Delete",
         method: "POST",
         url: "api/Ingredient/delete",
